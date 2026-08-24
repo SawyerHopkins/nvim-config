@@ -5,18 +5,11 @@ Installs and configures various tools provided from the mini meta library.
 --[[ INSTALL --]]
 
 vim.pack.add({ 'https://github.com/nvim-mini/mini.nvim' }, { confirm = false })
-vim.pack.add({ 'https://github.com/folke/which-key.nvim' }, { confirm = false })
 
 --[[ SETUP --]]
 
--- Enhanced text objects (e.g., around/inside functions, arguments, etc.)
-require('mini.ai').setup()
-
 -- Align text based on patterns (like '=', ':', etc.)
 require('mini.align').setup()
-
--- Toggle comments easily (line/block commenting)
-require('mini.comment').setup()
 
 -- Move lines or selections up/down/left/right
 require('mini.move').setup()
@@ -32,9 +25,6 @@ require('mini.splitjoin').setup()
 
 -- Add/change/delete surrounding characters (quotes, brackets, etc.)
 require('mini.surround').setup()
-
--- Sensible default settings (options, mappings, autocommands)
-require('mini.basics').setup()
 
 -- Navigate between bracketed items (buffers, files, diagnostics, etc.)
 require('mini.bracketed').setup()

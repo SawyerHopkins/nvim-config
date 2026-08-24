@@ -3,6 +3,10 @@ vim.g.maplocalleader = "\\"
 vim.g.no_plugin_maps = true -- Disable entire built-in ftplugin mappings to avoid conflicts.
 vim.g.loaded_netrw = 1 -- Disable netrw
 vim.g.loaded_netrwPlugin = 1 -- Disable netrw
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_node_provider = 0
 
 vim.opt.tabstop = 2         -- Number of spaces that a <Tab> character displays as
 vim.opt.shiftwidth = 2      -- Number of spaces used for each step of (auto)indent
@@ -20,3 +24,4 @@ vim.opt.scrolloff = 4 -- rows of context
 vim.opt.sidescrolloff = 8 -- columns of context
 vim.opt.shiftround = true -- size indent
 vim.opt.winminwidth = 5 -- Minimum window width
+vim.cmd.colorscheme('catppuccin')

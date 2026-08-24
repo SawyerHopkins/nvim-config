@@ -1,0 +1,27 @@
+local builtin = require('telescope.builtin')
+
+-- [s]earch keys
+vim.keymap.set('n', '<leader>sac', builtin.autocommands, { desc = 'Search auto commands' })
+vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = 'Search buffers' })
+vim.keymap.set('n', '<leader>sD', builtin.diagnostics, { desc = 'Search diagnostics' })
+vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = 'Search files' })
+vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = 'Search grep' })
+vim.keymap.set('n', '<leader>sh', builtin.current_buffer_fuzzy_find, { desc = 'Search here' })
+vim.keymap.set('n', '<leader>sH', builtin.help_tags, { desc = 'Search help tags' })
+vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = 'Search keymaps' })
+vim.keymap.set('n', '<leader>sp', builtin.builtin, { desc = 'Search pickers' })
+vim.keymap.set('n', '<leader>sr', builtin.registers, { desc = 'Search registers' })
+vim.keymap.set('n', '<leader>ssp', builtin.spell_suggest, { desc = 'Search spelling suggestions' })
+vim.keymap.set('n', '<leader>sqf', builtin.quickfix, { desc = 'Search quick fix' })
+vim.keymap.set('n', '<leader>st', builtin.treesitter, { desc = 'Search treesitter' })
+vim.keymap.set('n', '<leader>sT', builtin.current_buffer_tags, { desc = 'Search buffer tags' })
+
+vim.keymap.set('n', '<leader>slS', builtin.lsp_workspace_symbols, { desc = 'Search workspace symbols' })
+vim.keymap.set('n', '<leader>sls', builtin.lsp_document_symbols, { desc = 'Search document symbols' })
+vim.keymap.set('n', '<leader>slI', builtin.lsp_incoming_calls, { desc = 'Telescope incoming calls' })
+vim.keymap.set('n', '<leader>slO', builtin.lsp_outgoing_calls, { desc = 'Telescope outgoing calls' })
+vim.keymap.set('n', '<leader>sld', builtin.lsp_definitions, { desc = 'Telescope definition' })
+vim.keymap.set('n', '<leader>sli', builtin.lsp_implementations, { desc = 'Telescope implementation' })
+vim.keymap.set('n', '<leader>slr', builtin.lsp_references, { desc = 'Telescope references' })
+vim.keymap.set('n', '<leader>slt', builtin.lsp_type_definitions, { desc = 'Telescope type definition' })
+
