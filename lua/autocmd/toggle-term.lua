@@ -1,4 +1,8 @@
+local autoCmdUtils = require('utils.autocmd')
+
 vim.api.nvim_create_autocmd('TermOpen', {
+  desc = 'Apply terminal navigation and escape key bindings',
+  group = autoCmdUtils.augroup("toggle-term-keys"),
   pattern = 'term://*',
   callback = function ()
     local opts = {buffer = 0}

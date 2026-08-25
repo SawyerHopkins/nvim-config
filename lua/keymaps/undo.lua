@@ -1,4 +1,5 @@
--- Do not accidentally undo when moving around page
-vim.keymap.set('n', '<S-k>', '<C-u>', { desc = 'Half page up', remap = true })
-vim.keymap.set('n', '<S-j>', '<C-d>', { desc = 'Half page down', remap = true })
+-- First u is the worst possible map for destructive key binding I can image.
+-- Second remove undo/redo entirely to favor g-/g+
+vim.keymap.set('n', 'u', '<Nop>')
+vim.keymap.set('n', '<C-R>', '<Nop>')
 

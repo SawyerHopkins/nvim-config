@@ -1,8 +1,9 @@
-local fileUtils = require('utils.file')
+local autoCmdUtils = require('utils.autocmd')
 
--- Check if we need to reload the file when it changed
+
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
-  group = fileUtils.augroup("checktime"),
+  desc = "Check if file has changed.",
+  group = autoCmdUtils.augroup("buf-checktime"),
   callback = function()
     if vim.o.buftype ~= "nofile" then
       vim.cmd("checktime")
@@ -12,7 +13,8 @@ vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
 
 -- Go to last location when opening a buffer
 vim.api.nvim_create_autocmd("BufReadPost", {
-  group = fileUtils.augroup("last_loc"),
+  desc = 'Autonavigation to last location in buffer',
+  group = autoCmdUtils.augroup("buf-last-loc"),
   callback = function(event)
     local exclude = { "gitcommit" }
     local buf = event.buf

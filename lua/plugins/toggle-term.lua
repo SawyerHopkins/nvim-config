@@ -8,8 +8,7 @@ vim.pack.add({ 'https://github.com/akinsho/toggleterm.nvim' }, { confirm = false
 
 --[[ SETUP --]]
 
-local tt = require('toggleterm')
-tt.setup({
+require('toggleterm').setup({
   shell = vim.o.shell,
   direction = 'vertical',
   open_mapping = { [[<c-\>]] },

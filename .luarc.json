@@ -1,5 +1,8 @@
 {
     "diagnostics.globals": [
-        "sendToGrep"
+        "sendToGrep",
+        "MiniCompletion",
+        "MiniIcons",
+        "MiniKeymap"
     ]
 }

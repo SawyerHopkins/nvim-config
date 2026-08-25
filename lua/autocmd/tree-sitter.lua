@@ -1,4 +1,8 @@
+local autoCmdUtils = require('utils.autocmd')
+
 vim.api.nvim_create_autocmd('FileType', {
+  desc = 'Apply tree-sitter to buffer',
+  group = autoCmdUtils.augroup("ts-buf"),
   callback = function(args)
     local lang = vim.treesitter.language.get_lang(args.match)
     if not (lang and vim.treesitter.language.add(lang)) then return end

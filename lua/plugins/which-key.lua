@@ -8,7 +8,6 @@ vim.pack.add({ 'https://github.com/folke/which-key.nvim' }, { confirm = false })
 
 --[[ SETUP --]]
 
-local which_key = require('which-key')
-which_key.setup({
+require('which-key').setup({
   preset = 'modern',
 })
