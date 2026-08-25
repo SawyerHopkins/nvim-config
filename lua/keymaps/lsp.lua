@@ -1,5 +1,3 @@
-local builtin = require('telescope.builtin')
-
 -- [l]sp keys
 vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename symbol" })
 

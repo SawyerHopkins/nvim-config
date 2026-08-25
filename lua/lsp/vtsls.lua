@@ -5,7 +5,7 @@ vim.lsp.config('vtsls', {
         globalPlugins = {
           {
             name = '@vue/typescript-plugin',
-            location = vim.fn.stdpath('data') .. '/mason/packages/vue-language-server/node_modules/@vue/language-server',
+            location = vim.env.VUE_LS_PATH,
             languages = { 'vue' },
             configNamespace = 'typescript',
           }

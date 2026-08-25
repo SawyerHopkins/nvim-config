@@ -25,3 +25,9 @@ vim.opt.sidescrolloff = 8 -- columns of context
 vim.opt.shiftround = true -- size indent
 vim.opt.winminwidth = 5 -- Minimum window width
 vim.cmd.colorscheme('catppuccin')
+
+if vim.env.NVIM_TS_RUNTIME then
+  vim.opt.runtimepath:append(vim.env.NVIM_TS_RUNTIME)
+end
+
+

@@ -1,7 +1,3 @@
-if vim.env.NVIM_TS_RUNTIME then
-  vim.opt.runtimepath:append(vim.env.NVIM_TS_RUNTIME)
-end
-
 vim.api.nvim_create_autocmd('FileType', {
   callback = function(args)
     local lang = vim.treesitter.language.get_lang(args.match)
