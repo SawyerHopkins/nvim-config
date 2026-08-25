@@ -10,4 +10,4 @@ vim.lsp.config('typos_lsp', {
   }
 })
 
-vim.enable('typos_lsp')
+vim.lsp.enable('typos_lsp')
