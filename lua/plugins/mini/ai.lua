@@ -16,5 +16,5 @@ ai.setup({
       i = { '@conditional.inner', '@loop.inner' },
     })
   },
-  search_method = cover
+  search_method = 'cover'
 })

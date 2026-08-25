@@ -27,7 +27,7 @@ require('nvim-tree').setup({
     end
 
     -- default mappings
-    api.config.mappings.default_on_attach(bufnr)
+    api.map.on_attach.default(bufnr)
 
     -- your custom mapping
     vim.keymap.set("n", "<leader>s", nvimTreeUtils.search_node, opts('Live Grep'))

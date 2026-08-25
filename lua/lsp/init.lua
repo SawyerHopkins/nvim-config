@@ -1,1 +1,8 @@
 require('lsp.lua')
+require('lsp.eslint')
+require('lsp.nix')
+require('lsp.tailwindcss')
+require('lsp.typos')
+require('lsp.vtsls')
+require('lsp.vue')
+require('lsp.yaml')
