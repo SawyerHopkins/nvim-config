@@ -1,0 +1,6 @@
+require('autocmd.buffer')
+require('autocmd.telescope')
+require('autocmd.toggle-term')
+require('autocmd.lsp')
+require('autocmd.tree-sitter')
+require('autocmd.color')

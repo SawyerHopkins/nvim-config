@@ -1,0 +1,7 @@
+require('plugins.plenary')
+require('plugins.telescope')
+require('plugins.nvim-tree')
+require('plugins.toggle-term')
+require('plugins.mini')
+require('plugins.which-key')
+require('plugins.lsp')
