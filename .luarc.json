@@ -3,6 +3,9 @@
         "sendToGrep",
         "MiniCompletion",
         "MiniIcons",
-        "MiniKeymap"
+        "MiniKeymap",
+        "MiniDiff",
+        "MiniGit",
+        "MiniMap"
     ]
 }
