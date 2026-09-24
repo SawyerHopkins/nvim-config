@@ -6,7 +6,7 @@ dap.adapters["pwa-node"] = {
   executable = {
     command = "node",
     args = {
-      vim.env.JS_DAP_PATH
+      vim.env.JS_DAP_PATH,
       "${port}",
       -- "127.0.0.1",
     },
