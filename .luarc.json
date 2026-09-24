@@ -1,11 +1,11 @@
 {
-    "diagnostics.globals": [
-        "sendToGrep",
-        "MiniCompletion",
-        "MiniIcons",
-        "MiniKeymap",
-        "MiniDiff",
-        "MiniGit",
-        "MiniMap"
-    ]
+  "diagnostics.globals": [
+    "sendToGrep",
+    "MiniCompletion",
+    "MiniIcons",
+    "MiniKeymap",
+    "MiniDiff",
+    "MiniGit",
+    "MiniMap"
+  ]
 }
