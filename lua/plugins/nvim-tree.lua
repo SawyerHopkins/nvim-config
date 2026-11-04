@@ -11,6 +11,9 @@ vim.pack.add({ "https://github.com/nvim-tree/nvim-tree.lua" }, { confirm = false
 local nvimTreeUtils = require('utils.nvim-tree')
 
 require('nvim-tree').setup({
+  view = {
+    adaptive_size = true,
+  },
   diagnostics = {
     enable = true,
     show_on_dirs = true

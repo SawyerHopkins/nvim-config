@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader>lu", function()
   })
 end, { desc = "Remove unused imports" })
 
-vim.keymap.set('n', '<leader>lt', vim.lsp.buf.hover, { desc = 'LSP' })
+vim.keymap.set('n', '<leader>lt', vim.lsp.buf.hover, { desc = 'Hover' })
 vim.keymap.set('n', '<leader>ls', vim.lsp.buf.signature_help, { desc = 'Signature' })
 vim.keymap.set('n', '<leader>ld', vim.diagnostic.open_float, { desc = 'Diagnostics' })
 vim.keymap.set('n', '<leader>la', function () 
