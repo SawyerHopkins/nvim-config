@@ -1,4 +1,4 @@
-vim.keymap.set('n', '<leader>R', '<cmd>lua require("spectre").toggle()<CR>', {
+vim.keymap.set('n', '<leader>rt', '<cmd>lua require("spectre").toggle()<CR>', {
     desc = "Toggle Spectre"
 })
 vim.keymap.set('n', '<leader>rw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {

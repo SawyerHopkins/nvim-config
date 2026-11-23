@@ -1,3 +1,5 @@
+local lspUtils = require('utils.lsp')
+
 vim.lsp.config('eslint', {
   cmd = { 'vscode-eslint-language-server', '--stdio' },
   filetypes = {
@@ -20,7 +22,10 @@ vim.lsp.config('eslint', {
   },
   settings = {
     workingDirectory = { mode = 'auto' },
-  }
+  },
+  on_attach = function (client, bufnr)
+    vim.keymap.set("n", "<leader>ll", lspUtils.source_action("source.fixAll.eslint"), { desc = "Lint", buffer = bufnr })
+  end
 })
 
 vim.lsp.enable('eslint')

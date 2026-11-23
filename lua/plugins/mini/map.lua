@@ -10,3 +10,10 @@ map.setup({
     map.gen_integration.diagnostic(),
   },
 })
+
+-- WinScrolled is a global event: it fires whenever ANY window's view
+-- changes, not just the current one. mini.map's view-change handler only
+-- checks the currently focused buffer, so an unrelated window scrolling
+-- (e.g. a terminal split streaming output) forces a map re-encode of
+-- whatever you're editing. Same issue as indentscope; same fix.
+vim.api.nvim_clear_autocmds({ group = 'MiniMap', event = 'WinScrolled' })

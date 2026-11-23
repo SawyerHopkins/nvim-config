@@ -7,7 +7,6 @@ Adds base LSP server config
 vim.pack.add({ 'https://github.com/mfussenegger/nvim-dap' }, { confirm = false })
 vim.pack.add({ 'https://github.com/rcarriga/nvim-dap-ui' }, { confirm = false })
 vim.pack.add({ 'https://github.com/nvim-neotest/nvim-nio' }, { confirm = false })
-vim.pack.add({ 'https://github.com/rcarriga/nvim-dap-ui' }, { confirm = false })
 
 local dap, dapui = require("dap"), require("dapui")
 
